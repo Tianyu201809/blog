@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- //设计一个构造函数，按照期望执行下面的代码 var man = new People("小明"); var women = new
+    People("小红") console.log(man.name) // 期望为 小明 man.name = "小刚" //
+    期望为 warn:不允许通过赋值运算符 console.log(man.name) // 期望为 小明
+    console.log(women.name) // 期望为 小红 women.setName("小黄")
+    console.log(women.name) // 期望为 小黄 -->
+    <script>
+      class People {
+        constructor(name) {
+          this.name = name;
+        }
+        get name(){
+          return this.name
+        }
+        set name(){
+          console.warn('不允许')
+        }
+        setName(name){
+          this.name = name
+        }
+      }
+    </script>
+  </body>
+</html>
