@@ -26,5 +26,4 @@ Promise.retry = function (fn, times) {
       if (!times) reject(error)
     }
   })
-
 }
